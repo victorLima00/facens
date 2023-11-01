@@ -11,10 +11,12 @@ import Swal from 'sweetalert2';
 export class TotemIdComponent {
   constructor(private router: Router) {}
 
+  // Iniciando a função ao iniciar a pagina
   ngOnInit(): void {
     this.telaTermos();
   }
 
+  // Utilizando a biblioteca sweetalert2 para mostrar para o usuário os termos de uso do totem
   telaTermos(){
     Swal.fire({
       title: '<strong>Termos de uso</strong>',
@@ -54,6 +56,8 @@ export class TotemIdComponent {
     })
   }
 
+  // Utilizando a biblioteca sweetalert2 para mostrar uma tela de validação do ID
+  // Implementar a lógica do ID de cada usuário
   validaLogin() {
     Swal.fire({
       position: 'center',
@@ -62,6 +66,7 @@ export class TotemIdComponent {
       showConfirmButton: false,
       timer: 1500
     })
+    // Após o termino do alerta direcionar para a próxima pagina
     setTimeout(() => {
       this.router.navigate(['/totem-loading']);
     }, 1600);

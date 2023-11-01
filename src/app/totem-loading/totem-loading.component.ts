@@ -10,11 +10,14 @@ import Swal from 'sweetalert2';
 export class TotemLoadingComponent implements OnInit {
   constructor(private router: Router) {}
 
+  // Iniciando a função ao iniciar a página
   ngOnInit(): void{
       this.contador();  
   };
 
+  // Função para simular a inserção das garrafas no totem
   contador() {
+    // manipulando a div com o ID contador
     const div = document.getElementById('contador');
     const numTexto = '0';
     const texto = document.createTextNode(numTexto);
@@ -22,11 +25,15 @@ export class TotemLoadingComponent implements OnInit {
     let numcontador = 1;
     let erroOcorreu = false;
 
+    // Setando um intervalo de tempo para que os números sejam alterados na tela
     const intervalId = setInterval(() => {
+      // delimitando em 4 garrafas
       if (numcontador <= 4) {
         if (div) {
           div.textContent = numcontador.toString();
 
+          // simulando um erro de inserção, ao atingir a quantidade de 3 garrafas, apresento o erro e retorno para 2 garrafas
+          // junto com um contador do erro, para identificar se o erro já ocorreu
           if (numcontador == 3 && !erroOcorreu) {
             const divload = document.getElementById('load');
             const diverror = document.getElementById('error');
@@ -61,6 +68,7 @@ export class TotemLoadingComponent implements OnInit {
     }, 2000);
   }
 
+  // utilizando a biblioteca do sweetalert2
   qrCode(){
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
@@ -69,7 +77,7 @@ export class TotemLoadingComponent implements OnInit {
       },
       buttonsStyling: false
     })
-    
+    // Validando a inserção das garrafas e questionando o usuário sobre qual decisão ele quer tomar
     swalWithBootstrapButtons.fire({
       title: 'Garrafas inseridas com sucesso!',
       text: "Deseja imprimir ou escanear o qrCode?",

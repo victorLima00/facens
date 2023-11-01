@@ -1,3 +1,4 @@
+// Aqui eu importo os componentes(páginas) que irei utilizar no projeto
 import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -5,11 +6,11 @@ import { LoginColaboradorComponent } from './login-colaborador/login-colaborador
 import { TotemPagesComponent } from './totem-pages/totem-pages.component';
 import { TotemIdComponent } from './totem-id/totem-id.component';
 import { TotemFimComponent } from './totem-fim/totem-fim.component';
-import { TotemErroComponent } from './totem-erro/totem-erro.component';
 import { TotemLoadingComponent } from './totem-loading/totem-loading.component';
-import { TotemQuestionComponent } from './totem-question/totem-question.component';
-import { TotemScanComponent } from './totem-scan/totem-scan.component';
 
+// Aqui defino as todas (url) de cada página com seu respectivo componente 
+// o path '' é a tela inicial, então eu coloco o redirectTo para definir qual será a pagina inicial
+// então basta adicionar o router-outlet no app.componente.html para que as páginas sejam processadas
 const routes: Routes = [
 {path: '', redirectTo: '/totem-pages', pathMatch: 'full'},
 {path: 'home', component: HomeComponent},
@@ -17,10 +18,7 @@ const routes: Routes = [
 {path: 'totem-pages', component: TotemPagesComponent},
 {path: 'totem-id', component: TotemIdComponent},
 {path: 'totem-fim', component: TotemFimComponent},
-{path: 'totem-erro', component: TotemErroComponent},
-{path: 'totem-loading', component: TotemLoadingComponent},
-{path: 'totem-question', component: TotemQuestionComponent},
-{path: 'totem-scan', component: TotemScanComponent},
+{path: 'totem-loading', component: TotemLoadingComponent}
 ];
 
 @NgModule({
