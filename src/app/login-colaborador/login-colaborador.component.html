@@ -1,0 +1,67 @@
+<div class="container-fluid p-0 m-0" style="width: 100%; height: 700px;">
+    <div class="row d-flex flex-row" style="width: 100%; height: 700px;">
+        <div class="col d-flex flex-row justify-content-center  align-items-center" style="width: 100vh; height: 100vh;">
+            <div class="row d-flex flex-column p-5" id="menu-login">
+                <div class="col mb-4 text-center">
+                    <h1>Login</h1>
+                </div>
+                <div class="col mb-4">
+                    <span>Digite seu e-mail</span>
+                    <div class="login-button mt-1">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput" style="font-size: 1em;"><fa-icon [icon]="faEnvelope" class="fa-md me-1"></fa-icon> seu@email.com</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <span class="me-4">Digite sua senha</span> <a href="/" class="ms-5">Esqueceu sua senha?</a>
+                    <div class="login-button mt-1">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword" style="font-size: 1em;"><fa-icon [icon]="faKey" class="fa-md me-2"></fa-icon> 6 caracteres ou mais.</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault" style="font-size: 0.8em;">
+                          Manter login
+                        </label>
+                    </div>
+                </div>
+                <div class="col" style="width: 100%;">
+                    <button class="btn btn-success mt-3" type="submit" style="width: 100%;">Login</button>
+                </div>
+                <div class="col text-center mt-2 mb-3">
+                    <div class="row d-flex flex-row">
+                        <div class="col" style="font-size: 0.7em;">
+                            _________________
+                        </div>
+                        <div class="col mt-1" style="font-size: 0.7em;">
+                            ou logar com
+                        </div>
+                        <div class="col" style="font-size: 0.7em;">
+                            _________________
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row text-center justify-content-between p-0 m-0">
+                    <div class="col login-button-others me-2" style="color: red;">
+                        <fa-icon [icon]="faGoogle" class="fa-lg"></fa-icon>oogle
+                    </div>
+                    <div class="col login-button-others" style="color: blue;">
+                        <fa-icon [icon]="faFacebookF" class="fa-lg"></fa-icon>acebook
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <span>Ainda não possue uma conta? <a href="/">Cadastre-se aqui!</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="col p-0 d-flex flex-row justify-content-center  align-items-center text-center" style="width: 100vh; height: 100vh;">
+            <img class="img-fluid" src="../../assets/login-page.png" style="width: 83%; height: 65%;">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+
+
+#menu-login {
+    border: 2px solid black !important;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 5px rgba(105, 101, 101, 0.5);
+;
+}
+
+.login-button-others {
+    border: 2px solid rgba(0, 0, 0, 0.516);
+    border-radius: 8px;
+    padding: 5px;
+}

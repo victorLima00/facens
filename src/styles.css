@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'TiltNeon';
+    src: url('../src//fonts/TiltNeon-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'TiltNeon', sans-serif; 
+    overflow-x: hidden;
+}

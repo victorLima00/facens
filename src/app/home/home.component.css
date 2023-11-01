@@ -1,0 +1,250 @@
+.container-nav {
+    padding-left: 30px;
+    background-color: rgb(195, 215, 195);
+    padding: 10px;
+}
+
+.navbar {
+  background-color: rgba(60, 150, 60, 1) !important;
+  padding: 3px;
+}
+
+.nav-link {
+  color: rgba(60, 150, 60, 1);
+}
+
+.itens {
+    margin-right: 80px;
+    font-size: 1.3em;
+}
+
+.carousel-caption {
+    margin-bottom: 200px;
+}
+
+.corpo1 {
+    background-color: rgba(60, 150, 60, 1);
+    height: 1050px;
+}
+
+.card {
+    background-color: #218346;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.card-ex {
+    background-color: white;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.card-int {
+    background-color: white;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    text-align: center;
+}
+
+.card-title {
+    color: #218346;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.imagem-card {
+    border-bottom-left-radius: 20%;
+}
+
+.corpo2 {
+    background-color: rgba(233, 219, 204, 0.863);
+    height: 750px;
+}
+
+.fonte-editor {
+  font-size: 2.3em;
+}
+
+.fonte-editor2 {
+  font-size: 1em;
+}
+
+
+.cardmod {
+    width: 20%;
+    height: 14em !important;
+    perspective: 1000%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .cardmod:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .card-front {
+    background-color: #218346;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #218346;
+    justify-content: center;
+    font-size: 1.3em;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color: #fff;
+    color: #218346;
+    display: flex;
+    align-items: center;
+    border: 10px solid #fff;
+    justify-content: center;
+    font-size: 1em;
+    transform: rotateY(180deg);
+  }
+
+  .chat-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #17552e;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    z-index: 9999;
+    padding-top: 8px;
+    padding-right: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.541);
+  }
+
+  #chat-icon {
+    color: white;
+  }
+  
+  .corpo3 {
+    background-color: #218346;
+    height: 420px;
+  }
+
+  .corpo4 {
+    background-color: #362955;
+    height: 200px;
+    width: 80% !important;
+    margin-top: -130px;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .busca {
+    width: 100%;
+    background-color: transparent;
+    border: none !important;
+    color: white;
+    outline: 0 !important;
+  }
+
+  .texto4 {
+    text-align: start;
+    box-sizing: unset;
+  }
+
+  .box-busca {
+    border: 1px solid white;
+    padding: 5px;
+  }
+
+  .btn-busca {
+    background-color: #218346;
+    color: white;
+  }
+
+  .btn-busca:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+
+  .list-group {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .imagem1 {
+    padding-left: 25%;
+  }
+
+
+  .imagem2 {
+    padding-left: 25%;
+  }
+
+  .imagem3 {
+    padding-left: 25%;
+  }
+
+  .topo-card {
+    margin-right: 900px;
+    width: 60px;
+  }
+
+  .card-inter:hover,  .card-inter:hover p, .card-inter:hover h5 {
+    background-color: white;
+    color: #218346 !important;
+    cursor: pointer;
+  }
+  .card-ex:hover {
+    background-color: #218346;
+    cursor: pointer;
+  }
+
+
+  .card-inter-ativo,  .card-inter-ativo p, .card-inter-ativo h5 {
+    background-color: white;
+    color: #218346 !important;
+    cursor: pointer;
+  }
+  .card-ex-ativo {
+    background-color: #218346;
+    cursor: pointer;
+  }
